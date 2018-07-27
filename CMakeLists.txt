@@ -58,6 +58,8 @@ endforeach()
 add_custom_target(generate_ros_code DEPENDS ${generatedFiles})
 vrep_generate_stubs(${CMAKE_CURRENT_BINARY_DIR}/generated XML_FILE ${CMAKE_CURRENT_SOURCE_DIR}/meta/callbacks.xml LUA_FILE ${CMAKE_CURRENT_SOURCE_DIR}/simExtRosInterface.lua)
 
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/include/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/include/config.h)
+
 set(SOURCES
     src/vrep_ros_interface.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/external/v_repPlusPlus/Plugin.cpp
