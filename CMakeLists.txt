@@ -44,6 +44,7 @@ file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/doc)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/external)
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/generated)
 include_directories(${catkin_INCLUDE_DIRS})
 include_directories(${VREP_INCLUDE})
