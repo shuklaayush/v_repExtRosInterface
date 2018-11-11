@@ -10,9 +10,7 @@ set(PKG_DEPS
     cv_bridge
     image_transport
     tf
-    brics_actuator
     roslib
-    brics_actuator
     actionlib_msgs
     control_msgs
     diagnostic_msgs

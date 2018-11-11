@@ -29,6 +29,5 @@
   <depend>trajectory_msgs</depend>
   <depend>visualization_msgs</depend>
   <depend>rosconsole</depend>
-  <depend>brics_actuator</depend>
   <depend>roslib</depend>
 </package>
